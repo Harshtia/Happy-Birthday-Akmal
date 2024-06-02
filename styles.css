@@ -1,0 +1,92 @@
+@keyframes letter-appearances {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes name-flash {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white; /* Set background color to white */
+      font-family: Garamond, serif;  /* Specify Garamond font with serif fallback */
+      }
+    
+
+    .container {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center elements horizontally */
+    }
+
+    .birthday-message {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .birthday-message img {
+      width: 300px; /* Increased image width */
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .animated-name {
+      font-size: 60px; /* Increased font size */
+      display: inline-block; /* Allow spaces between letters */
+      animation: letter-appearances 0.5s ease-in forwards, name-flash 1s ease-in-out alternate infinite;
+    }
+
+    .friend-messages {
+      margin-top: 50px; /* Add space between sections */
+      text-align: center;
+    }
+
+    .friend-messages h2 {
+      margin-bottom: 20px;
+      font-size: 24px; /* Increased heading size */
+    }
+
+    .friend-message {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center;
+      margin-bottom: 500px; /* Add space between messages */
+      border: 1px solid #ddd; /* Add a light border for each message block */
+      padding: 20px; /* Increased padding within the message block */
+      width: 500px; /* Adjusted message block width */
+      margin: 0 auto; /* Center the message block horizontally */
+    }
+
+    .friend-image {
+      width: calc(100px * 2.5); /* Increased friend image width */
+      margin-bottom: 10px; /* Add margin between image and text */ border: 1px solid #ddd;
+      border-radius: 0%; /* Make friend images circular */
+    }
+
+    .friend-name {
+      font-size: 16px; /* Adjusted friend name size */}
+
+      /* Styles for the first message block (violet background, white text) */
+      .first-message {
+        background-color: #800080;
+        color: white;
+      }
+
+      /* Styles for the second message block (indigo background, white text) */
+      .second-message {
+        background-color: indigo;
+        color: white;
+      }
+     /* Styles for the second message block (indigo background, white text) */
+      .third-message {
+       background-color: #03AED2;
+       color: white;
+      }
+      /* Styles for the gallery images */
+      .gallery-image {
+        /* Adjust width and height here to control image size */
+        width: 300px; /* Example width */
+        height: 300px; /* Example height */
+        margin: 10px;
